@@ -1,0 +1,29 @@
+/* .container{
+
+    height: 500px;
+    width: 500px;
+    position: relative;
+    top: 100px;
+    left: 400px;
+    background-color: grey;
+    padding: 100px;
+    box-sizing: border-box;
+
+}
+input{
+    margin-left: 10px;
+} */
+.container {
+    height: 500px;
+    width: 500px;
+    position: relative;
+    top: 100px;
+    left: 400px;
+    background-color: grey;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+input {
+    margin-left: 10px;
+}
