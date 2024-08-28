@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 10% 40%;
+        }
+        .container {
+            height: 250px;
+            width: 350px;
+            background-color: rgb(18, 80, 121);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+        }
+        h1{
+            color: rgb(127, 159, 120);
+            font-size: 35px;
+        }
+        .span{
+            width: 300px;
+            /* align-items: center; */
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .time{
+            color: white;
+            margin: 10px;
+            height: 25px;
+            width: 70px;
+            background-color: rgb(33, 126, 126);
+            border-radius: 5px;
+            border: none;
+        }
+        button{
+            height: 30px;
+            width: 100px;
+            background-color: rgb(122, 164, 164);
+            border-radius: 5px;
+            border: none;
+        }
+        button:hover{
+            background-color: rgb(166, 207, 207);
+        }
+        button:active{
+            background-color: green;
+        }
+        .mid{
+            color: white;
+            /* padding: px; */
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>StopWatch</h1>
+        <div class="span">
+            <div class="time" id="min"></div>
+            <div class="mid">:</div>
+            <div class="time" id="sec"></div>
+        </div>
+        <div class="buttons">
+            <button id="start">start</button>
+            <button id="stop">stop</button>
+            <button id="reset">reset</button>
+        </div>
+    </div>
+</body>
+<script>
+    var seconds = 0;
+    var minutes = 0;
+    let min = document.getElementById('min');
+    let sec = document.getElementById('sec');
+    let start = document.getElementById('start');
+    let stop = document.getElementById('stop');
+    let reset = document.getElementById('reset');
+    sec.innerHTML = seconds +" sec";
+        min.innerHTML = minutes+" min";
+    start.addEventListener('click', start => {
+        console.log('int click');
+        console.log(start);
+
+        interval = setInterval(startTimmer, 1000);
+    });
+
+    function startTimmer() {
+        console.log(seconds);
+
+        seconds++;
+        console.log(seconds);
+
+        sec.innerHTML = seconds +" sec";
+        min.innerHTML = minutes+" min";
+        if (seconds == 60) {
+            seconds = 0;
+            minutes++;
+            sec.innerHTML = seconds +" sec";
+            min.innerHTML = minutes+" min";
+        }
+    }
+    stop.addEventListener('click', stop => {
+        clearInterval(interval);
+    });
+    reset.addEventListener('click', reset => {
+        minutes = 0
+        seconds = 0;
+        sec.innerHTML = seconds +" sec";
+        min.innerHTML = minutes+" min";
+    });
+</script>
+
+</html>

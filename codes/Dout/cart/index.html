@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="container1">
+            <p>Product</p>
+            <div class="productInfo">
+                <div class="product">
+                    <div id="p1">product 1 - $10.99</div>
+                    <div id="p2">product 2 - $15.99</div>
+                    <div id="p3">product 3 - $5.99</div>
+                </div>
+                <div class="addtocart">
+                    <button id="btn1" onclick="btn1()">Add to Cart</button>
+                    <button id="btn2" onclick="btn2()">Add to Cart</button>
+                    <button id="btn3" onclick="btn3()">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="container2">
+            <p>Your Cart</p>
+            <div class="yourCartInfo">
+                <div class="product">
+                    <div id="p1">product 1 - $10.99</div>
+                    <div id="p2">product 1 - $15.99</div>
+                    <div id="p3">product 1 - $5.99</div>
+                </div>
+                <div class="addtocart2">
+                    <div class="minus">
+                        <button id="minus1" onclick="minus1()">-</button>
+                        <button id="minus2" onclick="minus2()">-</button>
+                        <button id="minus3" onclick="minus3()">-</button>
+                    </div>
+                    <div class="count">
+                        <div id="count1"></div>
+                        <div id="count2"></div>
+                        <div id="count3"></div>
+                    </div>
+                    <div class="plus">
+                        <button id="plus1" onclick="btn1()">+</button>
+                        <button id="plus2" onclick="btn1()">+</button>
+                        <button id="plus3" onclick="btn1()">+</button>
+                    </div>
+                </div>
+                <div class="remove">
+                    <button id="remove">remove</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="source.js"></script>
+
+</html>

@@ -1,0 +1,38 @@
+<!-- map() , sort() , reduce() , some() , performance.now() ,  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Arrays</h1>
+   <p id="demo"></p> 
+</body>
+<script>
+    let c = [10 , 20 ,30];
+    let pi = 3.14;
+//map method
+    document.write('start'+'<br>');
+    let arr = c.map(r =>{
+        return r<20;
+        });
+        document.getElementById('demo').innerHTML=arr;
+        //for each loop
+        let a;
+        c.map(r =>{
+         a = r * r*pi;
+        });
+        document.write(a+'<br>');
+        //filter method
+        let arr1 = c.filter(r =>{
+        return r<=20;
+        });
+        document.write(arr1+'<br>');
+        document.write('end');
+
+       
+        
+</script>
+</html> 

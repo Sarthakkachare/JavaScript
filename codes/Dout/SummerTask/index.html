@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            height: 100vh;
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* background-color: pink; */
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <select name="list" id="seasons">
+            <option value="select" id="select"hidden>Select</option>
+            <option value="summer" id="summer">Summer</option>
+            <option value="winter"id="winter">winter</option>
+            <option value="rainy"id="rainy">rainy</option>
+        </select>
+        
+        <button type="button" onclick="SelectSeason()">Select</button>
+        
+    </div> 
+</body>
+<script>
+ 
+    function SelectSeason(){
+    let season=document.getElementById('seasons').value;
+    if('summer' == season){
+        
+        document.getElementById('main').style.backgroundImage="url('summer.jpg')";
+         
+    }else if('winter' == season){
+       
+        document.getElementById('main').style.backgroundImage="url('winter.png')";
+          
+    }else if('rainy' == season){
+       
+        document.getElementById('main').style.backgroundImage="url('rainy.jpg')";
+       
+    }
+}
+</script>
+</html>6

@@ -9,8 +9,13 @@
 // console.log('this is c:'+c);
 // console.log(d);
 
-'use strict'
-let a = 9;
+// 'use strict'
+// let a = 9;
 
-console.log(typeof(a));
+// console.log(typeof(a));
 
+var x = "sarthak";
+
+var x = "sarthak kachare";
+
+document.write(x);

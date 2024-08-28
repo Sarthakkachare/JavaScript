@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <button>Set TimeOut</button> 
+</body>
+<script>
+
+    function count(){
+        console.log('hello');
+        document.write("hello");
+    }
+    let time=setTimeout(count , 3000);
+    clearTimeout(time);
+    let interval = setInterval(count , 1000);
+    clearInterval(interval);  
+
+    setInterval(()=>{
+        console.log('hello');
+        
+    },3000);
+// setTimeOut();
+
+</script>
+
+</html>

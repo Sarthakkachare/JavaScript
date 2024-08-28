@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Coffee Consumption Estimator</h1>
+    <label>Age</label><input type="number" id="age" placeholder="Enter the age">
+    <label>Cups</label><input type="number" name="cups" id="cups">
+     <button onclick="Calculate()">submit</button>
+     <p id="output"></p>
+     <script>
+        function Calculate(){
+            let age = parseInt(document.getElementById('age').value);
+            let cups = parseInt(document.getElementById('cups').value);
+            let output = document.getElementById('output').value;
+
+            console.log(age);
+            console.log(cups);
+            
+            let maxAge = 100;
+            let yearleft = maxAge - age;
+            console.log(yearleft);
+            let  totalCups = yearleft * 360 * cups;
+            console.log(totalCups);
+            
+            document.getElementById('output').innerHTML="You will need "+totalCups+" cups of coffee to keep you awake until the age of "+maxAge;
+            
+             
+        }
+     </script>
+</body>
+</html>

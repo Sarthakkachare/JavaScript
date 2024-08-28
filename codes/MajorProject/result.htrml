@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <h2>Quiz Results</h2>
+        <p id="participant-name"></p>
+        <p>Total Time Taken: <span id="total-time"></span></p>
+        <p>Total Questions: <span id="total-questions"></span></p>
+        <p>Attempted: <span id="attempted"></span></p>
+        <p>Correct Answers: <span id="correct-answers"></span></p>
+        <p>Wrong Answers: <span id="wrong-answers"></span></p>
+        <p>Score: <span id="score-percentage"></span>%</p>
+        <button onclick="startAgain()">Start Again</button>
+        <button onclick="goToHome()">Go to Home</button>
+    </div>
+    <script src="source.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        height: 70px;
+        width: 100px;
+        /* background-color: green; */
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bolder;
+        font-size: 25px;
+    }
+    .main{
+        display: flex;
+        justify-content: space-evenly;
+        width: 400px;
+    }
+</style>
+<body>
+    <div class="main">
+        <div id="c1">
+            <button id ="r11" class="r11 box" onclick="A1()">A1</button>
+            <div class="r21 box">B1</div>
+            <div class="r31 box">C1</div>
+        </div>
+        <div id="c2">
+            <div class="r12 box">A2</div>
+            <div class="r22 box">B2</div>
+            <div class="r32 box">C2</div>
+        </div>
+        <div id="c3">
+            <div class="r13 box">A3</div>
+            <div class="r23 box">B3</div>
+            <div class="r33 box">C3</div>
+        </div>
+    </div>
+</body>
+<script>
+    let flag = 1;
+    function A1(){
+        let a11= document.getElementById('r11');
+        if(flag == 1){
+       
+    //    document.write(a11);
+       a11.style.backgroundColor='red';
+       document.getElementById('r11').innerHTML=" ";
+       flag = 0;
+        }else{
+            a11.style.backgroundColor='green';
+       document.getElementById('r11').innerHTML="A1";
+
+        }
+    }
+</script>
+</html>

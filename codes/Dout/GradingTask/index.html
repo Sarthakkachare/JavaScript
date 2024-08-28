@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        color: rgb(245, 112, 112);
+        /* align-content: center; */
+      
+       
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+
+    }
+    h1{
+        color: rgb(25, 201, 232);
+        /* border: 1px solid black; */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        width:400px;
+        position: relative;
+        left: 50px;
+        border-radius: 10px;
+        margin: 20px;  
+        
+    }
+    .main{
+        background-color: rgb(245, 112, 112);
+        text-align: center;
+        width: 500px;
+        height: 500px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        
+        
+    }
+    .marks , #btn ,h3,#total_marks,#percentage,#grade{
+        display: flex;
+        position: relative;
+        left: 30%;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 50px;
+        width: 200px;
+        background-color: white;
+        border: none;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgb(0,0,0,0.5);
+    }
+    #grade1 , #grade2 ,#grade3 ,#grade4 , #grade5{
+        box-shadow: 0 0 5px rgba(63, 136, 141, 0.5);
+        margin: 5px;
+        height: 20px;
+        width: 20px;
+       
+    }
+     #btn{
+        height: 50px;
+        width: 200px;
+        border-radius: 10px;
+        border:none;
+        background-color: rgb(25, 201, 232);
+        box-shadow: 0 0 10px rgb(0,0,0,0.5);
+        font-size: larger;
+        color: rgb(245, 112, 112);
+        font-weight: bold;
+     }
+</style>
+<body>
+    <div class="main">
+    <h1>Student Grade Management</h1>
+    <div class="marks">
+        <div id="grade1">22</div>
+        <div id="grade2">22</div>
+        <div id="grade3">22</div>
+        <div id="grade4">22</div>
+        <div id="grade5">22</div>
+    </div>
+    <button id="btn" onclick="calculate()">Calculate</button>
+    <p id="total_marks">Total Marks :</p>
+    <p id="percentage">Percentage :</p>
+    <p id="grade">Grade :</p>
+</div>
+</body>
+    <script>
+        // let btn = document.getElementById('btn');
+        // btn.addEventListener('click',()=>{
+
+        // })
+        // let grade1 = parseInt(prompt('Enter the Subject 1 Marks'));
+        // let grade2 = parseInt(prompt('Enter the Subject 2 Marks'));
+        // let grade3 = parseInt(prompt('Enter the Subject 3 Marks'));
+        // let grade4 = parseInt(prompt('Enter the Subject 4 Marks'));
+        // let grade5 = parseInt(prompt('Enter the Subject 5 Marks'));
+
+        // document.getElementById('grade1').innerHTML = grade1;
+        // document.getElementById('grade2').innerHTML = grade2;
+        // document.getElementById('grade3').innerHTML = grade3;
+        // document.getElementById('grade4').innerHTML = grade4;
+        // document.getElementById('grade5').innerHTML = grade5;
+     
+        function calculate() {
+            let total_marks = grade1 + grade2 + grade3 + grade4 + grade5;
+            document.getElementById('total_marks').innerHTML = `Total Marks : ${total_marks}`;
+            let percentage = (total_marks*100)/500;
+            // console.log(percentage);
+            document.getElementById('percentage').innerHTML= `percentage : ${percentage}`;
+
+            if(percentage >= 80 && percentage <= 100){
+                document.getElementById('grade').innerHTML='Grade A';
+            }else if(percentage >= 60 && percentage <= 79){
+                document.getElementById('grade').innerHTML='Grade B';
+            }else if(percentage >= 35 && percentage <= 59){
+                document.getElementById('grade').innerHTML='Grade C';
+            }else{
+                document.getElementById('grade').innerHTML='fail';
+            }
+
+        }
+    </script>
+
+
+
+</html>

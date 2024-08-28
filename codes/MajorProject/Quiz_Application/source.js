@@ -1,0 +1,122 @@
+let questionSet = [
+    //categeory 1
+  [set1:{
+        que: "Who among the following ruler was defeated by Seleucus?",
+        a: "Chandra Gupta Maurya",
+        b: "Vikramaditya",
+        c: "Chanakya",
+        d: "None of the above",
+        ans: "Chandra Gupta Maurya",
+    },
+    {
+        que: "What is Capital of Maharashtra",
+        a: "Mumbai",
+        b: "Pune",
+        c: "Kolhapur",
+        d: "Nashik",
+        ans: "Mumbai",
+    },
+    {
+        que: "Where did Tebhega movement occur in 1946?",
+        a: " Tamil Nadu",
+        b: " Karnataka",
+        c: "Bengal",
+        d: "Maharashtra",
+        ans: "Bengal",
+    },
+    {
+        que: " Who wrote Bande Mataram?",
+        a: " Bankimchandra Chatterjee",
+        b: "Rabindranath Tagore",
+        c: "Sharat chandra chattopadhyay",
+        d: "None of the above",
+        ans: "Rabindranath Tagore",
+    },
+    {
+        que: "When Indian national Anthem was first sung? ",
+        a: "August 15, 1947",
+        b: "1857 revolt",
+        c: " December 27, 1911 Calcutta",
+        d: "None of the Above",
+        ans: " December 27, 1911 Calcutta",
+    },
+    {
+        que: "What is the capital of Tamil Nadu?",
+        a: "delhi",
+        b: "mumbai",
+        c: "chennai",
+        d: "kolkata",
+        ans: "chennai",
+    },
+    {
+        que: "What is the capital of West Bengal?",
+        a: "delhi",
+        b: "mumbai",
+        c: "chennai",
+        d: "kolkata",
+        ans: "kolkata",
+    },
+    {
+        que: "Where is situated the battlefield of Plessey?",
+        a: "Punjab",
+        b: "Haryana",
+        c: "West Bengal",
+        d: " Karnataka",
+        ans: "West Bengal",
+    },
+    {
+        que: "What was the name of Harsha’s Capital?",
+        a: "Kannaauj",
+        b: " Kanpur",
+        c: "Lucknow",
+        d: "Gaya",
+        ans: "Kannaauj",
+    },
+    {
+        que: "Where did the formation of Azad Hind Fauj take Place?",
+        a: "Thailand",
+        b: "Haryana",
+        c: "Singapore",
+        d: " Karnataka",
+        ans: "Singapore",
+    },
+],
+
+    //categeory 2
+   [set2:{
+        question: "What is father name?",
+        option1: "sarthak",
+        option2: "subham",
+        option3: "madhuri",
+        option4: "sandip",
+        answer: "sarthak",
+    },
+    {
+        question: "What is your name?",
+        option1: "sarthak",
+        option2: "subham",
+        option3: "madhuri",
+        option4: "sandip",
+        answer: "sarthak",
+    },
+    {
+        question: "What is your name?",
+        option1: "sarthak",
+        option2: "subham",
+        option3: "madhuri",
+        option4: "sandip",
+        answer: "sarthak",
+    },
+    {
+        question: "What is your name?",
+        option1: "sarthak",
+        option2: "subham",
+        option3: "madhuri",
+        option4: "sandip",
+        answer: "sarthak",
+    },
+]
+];
+
+
+console.log(questionSet[0]);

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var s = ['sarthak','sandip','kachare'];
+    s.push('madhuri');//add last
+    s.pop();//delete last
+    s.shift();//delete first
+    s.unshift('sarthak');//addfirst
+    s.sort();//sort the array
+    s.reverse();//reverse the array
+    document.write(s,'<br>');
+    var emp = new Array();
+    for(let i = 0;i<=5;i++){
+        emp[i] = i;
+    }
+    var newarr=emp.concat(s);
+    newarr.sort();//sort the array
+    newarr.reverse();//reverse the array
+    document.write(newarr,'<br>');
+    document.write(Array.isArray(newarr[0]),'<br>');
+    document.write(newarr.indexOf('sarthak'));
+    
+    
+
+    var arr = new Array('sarthak','sandip','kachare');
+
+    document.write('<br>',arr);
+</script>
+</html>

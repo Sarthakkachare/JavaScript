@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onfocus="Hover()">
+    <div class="main" onresize="Hover()" onmouseout="out()">
+        hello
+    </div>
+    <button onresize="Data()">button</button>
+</body>
+<script>
+    function Hover(){
+        document.body.style.backgroundColor ="red"; 
+    
+    }
+    function out(){
+        document.body.style.backgroundColor ="yellow"; 
+    }
+    function Data(){
+        document.body.style.backgroundColor ="grey"; 
+    
+    }
+</script>
+</html>

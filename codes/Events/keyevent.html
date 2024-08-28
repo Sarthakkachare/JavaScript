@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="email">enter mail</label>
+    <input id="email" type="text"for="email"><br><br>
+    
+    
+    <div id="div1"></div>
+    <label for="name">enter name</label>
+    <input  id="name"  type="text"for="name"><br><br>
+    <div id="div2"></div>
+    <label for="number">enter number</label>
+    <input  id="number"  type="text"for="number">
+    <div id="div3"></div>
+
+</body>
+<script>
+    // let email = document.getElementById('email');
+    // //at the time of the putting the value first perfom the action then 
+    // email.addEventListener('keydown',function show(e){
+    //     console.log(`${e.keyCode} ${e.key}`);
+    //     console.log(e);
+    //     // document.getElementById('div1').innerHTML=`${e.keyCode,e.key}`;
+        
+    //     // alert(this.value);
+    // });
+    // let name = document.getElementById('name');
+    // name.addEventListener('keyup',function show(e){
+    //     console.log(`${e.keyCode} ${e.key}`);
+    //     // document.getElementById('div2').innerHTML=`${e.keyCode,e.key}`;
+      
+    // });
+    // let number = document.getElementById('number');
+    // number.addEventListener('keypress',function show(e){
+    //     //Shows the correct ascci value of the chacters
+    //     // alert(this.value);
+    //     console.log(`${e.keyCode} ${e.key}`);
+    //     // document.getElementById('div3').innerHTML=`${e.keyCode,e.key}`;
+      
+    // });
+
+    document.addEventListener('keyup',function show(e){
+        e.preventDefault();
+        if(e.ctrlKey || e.key == 's'){
+            alert('welcome');
+        }
+    })
+
+</script>
+</html>

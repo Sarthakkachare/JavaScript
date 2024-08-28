@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            height: 50px;
+            width:400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Id Name</h1>
+    <input id="demo1" type="text"><br><br>
+    <input id ='demo2'type="text">
+    <h1>Class Name</h1>
+    <input class='demo3'type="text" ><br><br>
+    <input class='demo4'type="text" >
+    <h1>Tag Name</h1>
+    <input type="text"><br><br>
+    <input type="text">
+    <h1>Query Selector all Name</h1>
+    <input type="text"><br><br>
+    <input type="text">
+</body>
+<script>
+    document.getElementById('demo2').style.border='3px solid red';
+    // const className = document.getElementsByTagName('');
+    // console.log(className)
+    // className[0].style.border='4px solid red';
+    // console.log(className);
+    // for(let i = 0;i<className.length;i++){
+    //     className[i].style.border='4px solid red';
+    //     // document.getElementsByTagName('input').style.border='3px solid green'; 
+    // }
+    document.querySelector('.demo3').style.backgroundColor='green';
+    let queryAll = document.querySelectorAll('h1'); 
+    for(let i = 0;i<queryAll.length;i++){
+        queryAll[i].style.border='4px solid black';
+        // document.getElementsByTagName('input').style.border='3px solid green'; 
+    }
+    // quertAll.style.border ='10px solid blue';
+</script>
+</html>

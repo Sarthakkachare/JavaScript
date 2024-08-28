@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="questiontype"></div>
+        <div class="heading">
+            <div class="circle" id="time">10s</div>
+            <div class="score" id="marks">Score: 0</div>
+        </div>
+        <div class="questionBox">
+            <h3 id="questionNumber">Question 1</h3>
+            <p id="question"></p>
+        </div>
+        <div id="buttons" class="quiz-buttons">
+            <!-- Answer buttons will be inserted here by JavaScript -->
+        </div>
+        <button class="button" id="next-question-btn" onclick="nextQuestion()">Next question</button>
+    </div>
+    <script src="source.js"></script>
+</body>
+</html>

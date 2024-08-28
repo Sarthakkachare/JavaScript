@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Voting Eligibility Criteria</h1>
+    <h1 id="demo"></h1> 
+</body>
+<script>
+    var age = prompt('enter your age');
+     if(age < 18){
+        document.getElementById('demo').innerHTML='Not Eligible for Voting';
+     }else{
+        document.getElementById('demo').innerHTML='Eligible for Voting';
+     }
+</script>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javascript Constant</h2>
+    <p>Declaring a constant array does not make element unchangable</p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+</body>
+<script>
+    const arr1 = ['apple','Bannana','orange'];
+    document.getElementById('demo1').innerHTML=arr1;
+    arr1[0] = 'apricot';
+    arr1.push('mango');
+    document.getElementById('demo2').innerHTML=arr1;
+
+</script>
+</html>

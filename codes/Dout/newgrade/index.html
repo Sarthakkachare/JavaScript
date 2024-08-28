@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+    <h1>Add Grade</h1>
+    <label for="name">Student Name</label>
+    <input type="text" id ="name"><br><br>
+    <label for="grade">Grade</label>
+    <input type="number" id ="grade">
+    <br><br>
+    <button id="addGrade" onclick="Add()">Add Grade</button>
+    <h1>Average Grade</h1>
+    <button id="averageGrade">Average Grade</button>
+    <h1>Student By Grade</h1>
+    <button id="list" onclick="StudentList()">Student list</button><br><br>
+    <div name="data" id="data"></div>
+</div>
+</body>
+
+
+<script>
+    let dataname = [];
+    let datagrade=[];
+    var name ;
+    var grade;
+function Add(){
+    let name = document.getElementById('name').value;
+    let grade = document.getElementById('grade').value;
+    this.name = name;
+    this.grade = grade;
+    // console.log(name);
+    // console.log(grade);
+    dataname.push({name,grade});
+    console.log(dataname);
+    // StudentList(name ,grade);
+    // console.log(dataname);
+    // console.log(datagrade);   
+}
+function averageGrade(){
+    let total =0;
+    for(let i = 0;i<datagrade.length;i++){
+        total = total +datagrade[i];
+    }
+
+    let average = (total * 100)/datagrade.length;
+
+} 
+let textArea=document.getElementById('data');
+
+function StudentList(){
+
+    const details = dataname.map((data)=>{
+        document.getElementById('data').innerHTML=`${deta.name}-${deta.grade}`;
+        return data;
+    })
+    // document.getElementById('data').innerHTML=`${details.name}-${details.grade}`;
+    // let arr=[];
+    // let obj=[];
+    // console.log(name);
+    // console.log(grade);
+    // arr.push()
+
+    // document.getElementById('data').innerHTML=`
+    // for(let i = 0;i<arr.length;i++){
+    //     <span>${dataname[i]}-${datagrade[i]}</span>
+    // }
+    // `;
+    // dataname.forEach(function show(){
+    // console.log(dataname[name]);
+    //      document.getElementById('data').innerHTML=dataname.name;
+
+
+    // obj["name"] = name;
+    // obj["grade"] = grade;
+
+    // obj.push({name:name , grade : grade});
+    // console.log(obj);
+    // arr.push(obj);
+
+    // arr.forEach(value=>{
+    //     document.getElementById('data').innerHTML=obj.values;
+   
+    // })
+    // console.log(arr[0]);
+
+
+    // let newData = [];
+    // let span = document.createElement('span');
+    // let data="";
+    // for(let i = 0;i<dataname.length;i++){
+    //     // console.log(`${dataname[i]}-${datagrade[i]}`);
+    //     newData.push(dataname[i]);
+    //     newData.push(datagrade[i]);
+        
+    //     // span.innerHTML=newData;
+    //     // console.log(span);
+    //     // textArea.appendChild(span);
+    //      data = newData.join(" - ");
+        
+    // }
+}
+
+
+</script>
+</html>
